@@ -10,6 +10,9 @@
         <li v-for="servico in empresa.servicos" :key="servico">{{ servico }}</li>
       </ul>
       <p><strong>{{ empresa.horario }}</strong></p>
+      <a href="https://wa.me/SEUNUMERO" target="_blank" class="contact-button">
+        <i class="fab fa-whatsapp icon"></i> Entre em Contato
+      </a>
     </div>
     <!-- Mapa da Localização -->
     <div class="location">
@@ -105,6 +108,36 @@
   padding: 5px 10px;
   border-radius: 5px;
   text-align: center;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  text-decoration: none;
+  background-color: #25d366;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: auto;
+  height: auto;
+  transition: transform 0.2s, box-shadow 0.2s;
+  line-height: 1.2;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-button .icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
 }
 </style>
 
