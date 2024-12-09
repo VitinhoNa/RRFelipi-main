@@ -10,7 +10,7 @@
         <li v-for="servico in empresa.servicos" :key="servico">{{ servico }}</li>
       </ul>
       <p><strong>{{ empresa.horario }}</strong></p>
-      <a href="https://wa.me/SEUNUMERO" target="_blank" class="contact-button">
+      <a href="https://wa.me/5511970218375" target="_blank" class="contact-button">
         <i class="fab fa-whatsapp icon"></i> Entre em Contato
       </a>
     </div>
